@@ -1,0 +1,139 @@
+/* Poll form actions */
+.poll-form-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+ }
+/* Responsive breakpoints */
+@media (max-width: 480px) {
+  .app-background {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .project-title {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+  .poll-card {
+    padding: 10px;
+    border-radius: 8px;
+  }
+  h4 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .app-background {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .project-title {
+    font-size: 2rem;
+    margin-bottom: 28px;
+  }
+  .poll-card {
+    padding: 16px;
+    border-radius: 10px;
+  }
+  h4 {
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .app-background {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .project-title {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+  }
+  .poll-card {
+    padding: 24px;
+    border-radius: 12px;
+  }
+  h4 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+}
+body {
+  background-color: #18816a4f;
+  min-height: 100vh;
+}
+
+
+/* Page background */
+.app-background {
+  background-color: #18816a4f;
+  min-height: 100vh;
+  width: 100vw;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* <-- REMOVE the extra closing brace here! */
+/* Project title */
+.project-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1f3c88;
+  text-align: center;
+  margin-bottom: 40px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+/* Poll cards */
+.poll-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(40, 60, 120, 0.10);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  padding: 24px;
+}
+
+.poll-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Form inside card */
+.card form .form-control {
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #dbeafe;
+}
+
+/* Buttons spacing and style */
+.card button {
+  margin-right: 10px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  border: none;
+  box-shadow: 0 2px 8px rgba(40,60,120,0.08);
+  transition: background 0.2s;
+}
+
+.card button:hover {
+  background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+}
+
+/* Section headers */
+h4 {
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Info alert style */
+.alert-info {
+  background: #e3eafc;
+  color: #2575fc;
+  border: none;
+}
